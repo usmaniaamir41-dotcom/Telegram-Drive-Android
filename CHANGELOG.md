@@ -6,6 +6,15 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) an
 
 ---
 
+## [1.0.1] — 2026-07-04
+
+### 🚫 Ads & Monetization Removed
+- Removed the "Click to Continue" ad gateway screen from the login/launch flow.
+- Removed the "Donate" heart button at the bottom of the AuthWizard screen.
+- Removed the "Support the Project" donation dialog with PayPal/Litecoin/Bitcoin options.
+
+---
+
 ## [1.0.0] — 2026-07-04
 
 ### 🎉 Initial Android Release

@@ -41,6 +41,7 @@ config.json
 
 # ─── APK signing artifacts ─────────────────────────────────────────────────────
 *.idsig
+*.apk
 
 # ─── Tauri plugin store (user data) ────────────────────────────────────────────
 app/src-tauri/session*.session

@@ -109,13 +109,7 @@ function AppContent() {
         // Verify the session is still valid with Telegram servers
         const ok = await invoke<boolean>("cmd_check_connection");
         if (ok) {
-          // Check if user already passed the ad gateway — skip it if so
-          const gatewayPassed = await store.get<boolean>("ad_gateway_passed");
-          if (gatewayPassed) {
-            setAuthStatus("authenticated");
-          } else {
-            setAuthStatus("ad-gateway");
-          }
+          setAuthStatus("authenticated");
         } else {
           setAuthStatus("unauthenticated");
         }
@@ -220,7 +214,7 @@ function AppContent() {
         </Suspense>
       )}
       {authStatus === "unauthenticated" && (
-        <AuthWizard onLogin={() => setAuthStatus("ad-gateway")} />
+        <AuthWizard onLogin={() => setAuthStatus("authenticated")} />
       )}
     </main>
   );
