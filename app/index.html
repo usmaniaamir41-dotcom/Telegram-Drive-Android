@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <script>
+    (function () {
+      if (/android/i.test(navigator.userAgent)) {
+        document.documentElement.classList.add('platform-android');
+        document.documentElement.style.setProperty('--safe-area-min-top', '32px');
+      }
+    })();
+  </script>
+  <title>Telegram Drive</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>

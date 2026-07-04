@@ -1,0 +1,52 @@
+# ─── Build Artifacts ───────────────────────────────────────────────────────────
+app/src-tauri/target/
+app/dist/
+app/node_modules/
+app/.tauri/
+
+# ─── Android Build Artifacts ───────────────────────────────────────────────────
+app/src-tauri/gen/android/app/build/
+app/src-tauri/gen/android/buildSrc/build/
+app/src-tauri/gen/android/.gradle/
+app/src-tauri/gen/android/local.properties
+
+# ─── Gradle Caches (moved to E: drive via junction) ───────────────────────────
+.gradle_cache/
+.cargo_registry/
+
+# ─── IDE / Editor ──────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+.cursor/
+*.iml
+
+# ─── OS Files ──────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Logs & Temp ───────────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+npm-debug.log*
+
+# ─── Secrets / Credentials ─────────────────────────────────────────────────────
+config.json
+*.keystore
+*.jks
+*.pem
+*.env
+.env.*
+
+# ─── APK signing artifacts ─────────────────────────────────────────────────────
+*.idsig
+
+# ─── Tauri plugin store (user data) ────────────────────────────────────────────
+app/src-tauri/session*.session
+
+# ─── TypeScript build cache ────────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ─── Rust ──────────────────────────────────────────────────────────────────────
+Cargo.lock
